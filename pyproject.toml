@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "crypto-bot"
+version = "0.1.0"
+description = ""
+authors = ["Arnav <arnav.jindal7@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+"discord.py" = {git = "https://github.com/rapptz/discord.py"}
+aiohttp = "^3.7.4"
+python-dateutil = "^2.8.2"
+toml = "^0.10.2"
+jishaku = "^2.1.0"
+orjson = "^3.6.0"
+extras = "^1.0.0"
+aioredis = {git = "https://github.com/aio-libs/aioredis-py", extras = ["hiredis"]}
+markdownify = "^0.9.2"
+matplotlib = "^3.4.2"
+mplfinance = "^0.12.7-alpha.17"
+discord-flags = {git = "https://github.com/daggy1234/Flag-Parsing"}
+asyncpg = "^0.23.0"
+discord-ext-store-true = {git = "https://github.com/bijij/discord-ext-store-true"}
+tabulate = "^0.8.9"
+
+[tool.poetry.dev-dependencies]
+flake8 = "^3.9.2"
+yapf = "^0.31.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
